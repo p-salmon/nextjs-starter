@@ -1,4 +1,4 @@
-# FrenchSalmon NextJS Starter
+# NextJS Starter
 
 A modern full-stack application built with Next.js, Prisma, and Better-Auth, featuring a modular architecture and comprehensive authentication system.
 

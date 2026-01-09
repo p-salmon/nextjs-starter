@@ -27,7 +27,7 @@ function NavigationContent() {
       {/* Header */}
       <div className="p-6 border-b border-gray-200">
         <div className="flex flex-col items-left">
-          <h1 className="text-lg font-bold text-oak-dark">FrenchSalmon NextJS Starter</h1>
+          <h1 className="text-lg font-bold text-oak-dark">NextJS Starter</h1>
         </div>
       </div>
 
@@ -78,10 +78,10 @@ export function Navigation() {
         <div className="fixed top-0 left-0 right-0 z-50 bg-white border-b border-gray-200 shadow-sm p-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-3">
-              <span className="font-bold text-oak-dark">FrenchSalmon NextJS Starter</span>
+              <span className="font-bold text-oak-dark">NextJS Starter</span>
             </div>
             <Sheet open={open} onOpenChange={setOpen}>
-              <SheetTitle>FrenchSalmon NextJS Starter</SheetTitle>
+              <SheetTitle>NextJS Starter</SheetTitle>
               <SheetTrigger asChild>
                 <Button variant="ghost" size="icon">
                   <Menu className="h-6 w-6" />
