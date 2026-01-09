@@ -1,8 +1,8 @@
-import { useQuery as useReactQuery } from "@tanstack/react-query";
+import { useQuery } from "@tanstack/react-query";
 
-export function useQuery(key: string | string[]) {
+export function useApiQuery(key: string | string[]) {
   const keys = Array.isArray(key) ? key : [key];
-  return useReactQuery({
+  return useQuery({
     queryKey: keys,
     queryFn: async () => {
       const response = await fetch(`/api/${keys.join("/")}`);

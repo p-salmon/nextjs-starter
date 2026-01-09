@@ -35,15 +35,15 @@ Each module is a self-contained unit that can be used in other parts of the appl
   - delete-object.ts
   - use-objects.ts
 - Use prisma to handle migration. Only update the schema and we'll run `npx prisma migrate dev` to apply the changes manually.
-- Use the useQuery hook from @/src/ui/hooks/use-query.ts to fetch data.
+- Use the useApiQuery hook from @/src/ui/hooks/use-api-query.ts to fetch data.
 - Always create a hook when fetching data from the database. (Ex: module/hooks/use-objects.ts)
 </guidelines>
 
 <use-query-hook>
-import { useQuery } from "@/src/ui/hooks/use-query";
+import { useApiQuery } from "@/src/ui/hooks/use-api-query";
 
 export function useObjects(key: string | string[]) {
-  const { data, isLoading, isError, error, refetch } = useQuery(key);
+  const { data, isLoading, isError, error, refetch } = useApiQuery(key);
   return {
     objects: data ?? null,
     isLoadingArticle: isLoading,

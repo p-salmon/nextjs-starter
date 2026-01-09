@@ -1,6 +1,5 @@
 "use client";
 
-import { usePathname } from "next/navigation";
 import Link from "next/link";
 import { useState } from "react";
 import { Button } from "@/src/ui/components/button";
@@ -20,8 +19,6 @@ const allNavigationItems = [
 ];
 
 function NavigationContent() {
-  const pathname = usePathname();
-
   return (
     <div className="flex flex-col h-full">
       {/* Header */}
@@ -40,6 +37,7 @@ function NavigationContent() {
             <Button
               key={item.href}
               variant="ghost"
+              className="w-full justify-start gap-3 h-11"
               asChild
             >
               <Link key={item.href} href={item.href}>
